@@ -101,6 +101,7 @@ export interface GoogleLoginProps {
   readonly isSignedIn?: boolean;
   readonly type?: string;
   readonly accessType?: string;
+  readonly state?: string;
   readonly render?: (props: { onClick: () => void, disabled?: boolean }) => JSX.Element;
 }
 
@@ -177,6 +178,7 @@ export interface UseGoogleLoginProps {
   readonly isSignedIn?: boolean;
   readonly discoveryDocs?: any;
   readonly accessType?: string;
+  readonly state?: string;
 }
 
 export function useGoogleLogin(input: UseGoogleLoginProps): UseGoogleLoginResponse;
